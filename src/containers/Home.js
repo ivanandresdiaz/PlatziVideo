@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import Header from '../components/Header';
@@ -9,7 +10,7 @@ import Footer from '../components/Footer';
 import useInitalState from '../hooks/useInitalState';
 
 const API = ('http://localhost:3000/initalState');
-const App = () => {
+const Home = () => {
   const videos = useInitalState(API);
   console.log(videos);
   return (
@@ -37,4 +38,4 @@ const App = () => {
     </div>
   );
 };
-export default App;
+export default Home;
